@@ -5,7 +5,7 @@ const eyebrowClasses: Record<AccentName, string> = {
   neutral: "text-[#a8a8a8]",
   cyan: "text-[#7faeaf]",
   green: "text-[#8aa88a]",
-  white: "text-[#a8a8a8]",
+  purple: "text-[#a89bb8]",
 };
 
 type SectionHeaderProps = {
@@ -23,7 +23,7 @@ export function SectionHeader({ eyebrow, title, helper, accent = "neutral" }: Se
           {eyebrow}
         </p>
       ) : null}
-      <h1 className="heading-serif text-5xl font-bold text-[#e8e3da] max-sm:text-4xl">
+      <h1 className="section-heading text-5xl font-bold text-[#e8e3da] max-sm:text-4xl">
         {title}
       </h1>
       {helper ? <p className="mt-3 max-w-2xl text-sm leading-6 text-[#a8a8a8]">{helper}</p> : null}

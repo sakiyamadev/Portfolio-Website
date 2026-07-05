@@ -2,7 +2,7 @@ import type { LucideIcon } from "lucide-react";
 
 export type SectionId = "home" | "projects" | "experience" | "resume";
 
-export type AccentName = "neutral" | "cyan" | "green" | "white";
+export type AccentName = "neutral" | "cyan" | "green" | "purple";
 
 export type ProjectCategory = "software" | "embedded";
 
@@ -54,7 +54,6 @@ export type DockLink = {
   id: string;
   label: string;
   url: string;
-  icon: string;
   external: boolean;
 };
 

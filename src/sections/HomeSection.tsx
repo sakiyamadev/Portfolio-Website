@@ -7,7 +7,7 @@ import { TechStackGrid } from "../components/TechStackGrid";
 export function HomeSection() {
   return (
     <div className="p-8 max-sm:p-5">
-      <SectionHeader eyebrow="Home / About / Contact" title={`Hey, I'm ${siteContent.name}.`} accent="neutral" />
+      <SectionHeader eyebrow="About Me" title={`Hey, I'm ${siteContent.name}`} accent="neutral" />
       <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
         <div className="rounded-md border border-[#2a2a2a] bg-[#1a1a1a] p-3">
           {/* Replace profile-placeholder.png with your real profile photo. */}
@@ -25,10 +25,6 @@ export function HomeSection() {
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <InfoPanel icon={<Sparkles size={18} />} title="Personal Interests" text={siteContent.interests} />
             <InfoPanel icon={<Cpu size={18} />} title="Technical Focus" text={siteContent.technicalFocus} />
-          </div>
-          <div className="mt-6 inline-flex items-center gap-2 rounded-md border border-[#2f2f2f] bg-[#121212] px-4 py-2 text-sm text-[#a8a8a8]">
-            <Mail size={16} />
-            Use the dock below for GitHub, LinkedIn, Instagram, email, and resume.
           </div>
         </div>
       </section>

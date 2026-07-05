@@ -38,7 +38,13 @@ a {
   background: rgba(232, 227, 218, 0.22);
 }
 
-/* Retro editorial serif used only for large section headings. */
+/* Palatino Linotype for main section titles (Home, Projects, Experience, Resume). */
+.section-heading {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* Retro editorial serif for smaller in-section headings. */
 .heading-serif {
   font-family: Georgia, Charter, "Times New Roman", serif;
   letter-spacing: -0.01em;
