@@ -1,50 +1,42 @@
 import { motion } from "motion/react";
-import { navigationItems } from "../data/navigation";
-import type { AccentName, SectionId } from "../types";
+import type { SectionId } from "../types";
 
 type FolderNavProps = {
   activeSection: SectionId;
   onSectionChange: (section: SectionId) => void;
 };
 
-// Muted section tab colors (no bright/neon).
-const tabColors: Record<AccentName, string> = {
-  neutral: "#c9c3b6",
-  cyan: "#7a9bb8",
-  green: "#8aa88a",
-  white: "#b8b2a6",
-};
-
-const OUTLINE = "#141414";
-const FILL = "#e8e3da";
-const FILL_LIGHT = "#f0ebe0";
-
-// Classic hand-drawn desktop folder. Closed = flat folder, open = front pocket + tab.
-function FolderIcon({ open, tab }: { open: boolean; tab: string }) {
-  return (
-    <svg
-      viewBox="0 0 72 58"
-      className="h-[54px] w-[68px] max-sm:h-[42px] max-sm:w-[52px]"
-      style={{ filter: "drop-shadow(2px 3px 0 rgba(17,17,17,0.55))" }}
-      aria-hidden="true"
-    >
-      {/* folder tab */}
-      <rect x="9" y="12" width="26" height="13" rx="3" fill={tab} stroke={OUTLINE} strokeWidth="2.5" />
-      {/* folder body / back panel */}
-      <rect x="7" y="21" width="58" height="29" rx="4" fill={FILL} stroke={OUTLINE} strokeWidth="2.5" />
-      {/* open front pocket */}
-      {open ? (
-        <path
-          d="M4 29 H68 L61 51 H11 Z"
-          fill={FILL_LIGHT}
-          stroke={OUTLINE}
-          strokeWidth="2.5"
-          strokeLinejoin="round"
-        />
-      ) : null}
-    </svg>
-  );
-}
+const navItems: {
+  id: SectionId;
+  label: string;
+  closedIcon: string;
+  openIcon: string;
+}[] = [
+  {
+    id: "home",
+    label: "Home",
+    closedIcon: "/assets/folder-home-closed.png",
+    openIcon: "/assets/folder-home-open.png",
+  },
+  {
+    id: "projects",
+    label: "Projects",
+    closedIcon: "/assets/folder-projects-closed.png",
+    openIcon: "/assets/folder-projects-open.png",
+  },
+  {
+    id: "experience",
+    label: "Experience",
+    closedIcon: "/assets/folder-experience-closed.png",
+    openIcon: "/assets/folder-experience-open.png",
+  },
+  {
+    id: "resume",
+    label: "Resume",
+    closedIcon: "/assets/folder-resume-closed.png",
+    openIcon: "/assets/folder-resume-open.png",
+  },
+];
 
 export function FolderNav({ activeSection, onSectionChange }: FolderNavProps) {
   return (
@@ -52,7 +44,7 @@ export function FolderNav({ activeSection, onSectionChange }: FolderNavProps) {
       aria-label="Portfolio folders"
       className="fixed right-4 top-1/2 z-20 flex -translate-y-1/2 flex-col items-center gap-5 max-sm:right-2 max-sm:gap-3.5"
     >
-      {navigationItems.map((item) => {
+      {navItems.map((item) => {
         const isActive = item.id === activeSection;
         return (
           <motion.button
@@ -66,13 +58,18 @@ export function FolderNav({ activeSection, onSectionChange }: FolderNavProps) {
             className="flex flex-col items-center bg-transparent outline-none"
             aria-current={isActive ? "page" : undefined}
           >
-            <FolderIcon open={isActive} tab={tabColors[item.accent]} />
+            <img
+              src={isActive ? item.openIcon : item.closedIcon}
+              alt=""
+              className="w-[82px] object-contain max-sm:w-16"
+              draggable={false}
+            />
             <span
               className={`mt-1 text-center text-[0.75rem] leading-tight max-sm:text-[0.62rem] ${
                 isActive ? "font-semibold text-[#e8e3da]" : "font-normal text-[#9a9a9a]"
               }`}
             >
-              {item.shortLabel}
+              {item.label}
             </span>
           </motion.button>
         );
