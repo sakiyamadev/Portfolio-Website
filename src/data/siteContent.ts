@@ -26,8 +26,6 @@ export const siteContent = {
   ],
   resumePath: "/assets/resume-placeholder.pdf",
   footerLines: [
-    "Built by Shun Akiyama",
-    "Made with React + TypeScript",
-    "© 2026 Shun Akiyama",
+    "© 2026 Shun Akiyama"
   ],
 };
