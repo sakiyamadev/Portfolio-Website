@@ -19,7 +19,7 @@ export function ExperienceCard({ experience, isOpen, onToggle }: ExperienceCardP
         <div className="space-y-5">
           <p className="text-sm leading-6 text-[#c9c9c9]">{experience.shortDescription}</p>
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-[#8aa88a]">Resume Bullets</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-[#8aa88a]">Key Contributions</h3>
             <ul className="mt-3 space-y-2 text-sm leading-6 text-[#c9c9c9]">
               {experience.bullets.map((bullet) => (
                 <li key={bullet} className="flex gap-2">

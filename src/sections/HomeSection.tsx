@@ -19,7 +19,6 @@ export function HomeSection() {
         </div>
         <div className="rounded-md border border-[#2a2a2a] bg-[#1a1a1a] p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#7faeaf]">{siteContent.headline}</p>
-          <h2 className="heading-serif mt-3 text-3xl font-bold text-[#e8e3da]">About Me</h2>
           <p className="mt-4 text-base leading-8 text-[#c9c9c9]">{siteContent.intro}</p>
           <p className="mt-4 text-base leading-8 text-[#a8a8a8]">{siteContent.about}</p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -46,7 +45,7 @@ export function HomeSection() {
           ))}
         </div>
       </section>
-
+      
       <TechStackGrid />
     </div>
   );

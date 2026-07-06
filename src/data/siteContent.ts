@@ -1,16 +1,16 @@
 // Edit profile copy, placeholder text, photos, and resume path here.
 export const siteContent = {
-  name: "Shun Akiyama",
-  headline: "Software, Embedded Systems, and Robotics Builder",
+  name: "Shun",
+  headline: "Full-Stack, Embedded Systems, Robotics",
   intro:
-    "Placeholder intro goes here. Write a concise story about your technical interests, internship goals, and the systems you like building.",
+    "Hi! I am a Computer Engineering Student @ University of British Columbia, and I am a evergrowing learner.",
   about:
-    "I am interested in the intersection of software, firmware, controls, and robotics. This site is built as a dark desktop workspace where recruiters can explore my projects, experience, and resume.",
+    "I am interested in the intersection of software, firmware, and robotics. I am currently working on FSAE Electric vehicle software, full-stack website and autonomous robot for UBC BizTech",
   interests:
-    "Add personal background, hobbies, clubs, photos, travel, skiing, or any details that make the site feel more like you.",
+    "Basketball, Volleyball, Badminton, Hiking, Anime, Stocks. If we match on any interests, be sure to reach out!",
   technicalFocus:
-    "Current focus areas: full-stack tools, embedded firmware, sensor-driven systems, robotics prototypes, and clean engineering documentation.",
-  profileImage: "/assets/profile-placeholder.png",
+    "Current focus areas: full-stack tools, embedded firmware, sensor-driven systems, robotics prototypes",
+  profileImage: "/assets/profile-photo.jpeg",
   bootIcon: "/assets/boot-icon-placeholder.png",
   personalPhotos: [
     {

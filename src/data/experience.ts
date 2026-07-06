@@ -3,19 +3,20 @@ import type { Experience } from "../types";
 // Edit experiences, roles, dates, bullet points, and optional media here.
 export const experiences: Experience[] = [
   {
-    id: "company-one",
-    organization: "Company Name Here",
-    role: "Role Title Here",
-    dateRange: "Month 2026 - Present",
-    location: "City, State",
+    id: "FormulaE",
+    organization: "UBC Formula Electric",
+    role: "Software/Firmware Engineer",
+    dateRange: "Sept 2025 - Present",
+    location: "Vancouver, BC",
     shortDescription:
-      "Short description goes here. Summarize the team, product area, and what you contributed.",
+      "Working with a team of 30 to build vehicle software for a FSAE Electric car.",
     bullets: [
-      "Resume bullet point here describing ownership, impact, and tools used.",
-      "Resume bullet point here describing collaboration with engineers or cross-functional partners.",
-      "Resume bullet point here describing a shipped feature, prototype, or technical result.",
+      "Developing embedded firmware in C/C++ for STM32 microcontrollers in a Formula SAE electric vehicle.",
+      "Integrating brake pressure sensors, suspension systems, tire temperature sensors, IMUs, and coolant flowmeters into the rear sensor module by developing functions to retrieve data from the hardware, calculate quantities using datasheets, and communicate over the CAN bus.",
+      "Validating firmware using Segger J-Link to flash PCBs and conducting Software-In-Loop testing for CAN message transmission",
+      "Constructed Chimera, a Python abstraction script for the electrical team to test their hardware and object-oriented drivers for potentiometer and software watchdog implementation",
     ],
-    technologies: ["React", "TypeScript", "Python", "Git"],
+    technologies: ["C/C++", "STM32", "CMake", "SEGGER J-Link", "Python"],
     media: [
       {
         type: "image",
