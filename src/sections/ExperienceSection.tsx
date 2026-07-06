@@ -23,10 +23,9 @@ export function ExperienceSection() {
       <SectionHeader
         eyebrow="Experience"
         title="Experience"
-        helper="Click a card to expand."
         accent="green"
       />
-      <div className="grid gap-5 xl:grid-cols-2">
+      <div className="grid gap-5 xl:grid-cols-1">
         {experiences.map((experience) => (
           <ExperienceCard
             key={experience.id}

@@ -41,7 +41,6 @@ export function ProjectsSection() {
       <SectionHeader
         eyebrow="Projects"
         title="Projects"
-        helper="Click a card to expand."
         accent="cyan"
       />
       <div className="mb-6 flex flex-wrap items-center gap-2 rounded-md border border-[#2a2a2a] bg-[#171717] p-3">
@@ -67,7 +66,7 @@ export function ProjectsSection() {
           );
         })}
       </div>
-      <div className="grid gap-5 xl:grid-cols-2">
+      <div className="grid gap-5 xl:grid-cols-1">
         {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
