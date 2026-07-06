@@ -5,3 +5,5 @@ dist
 
 shun_personal_website_build_brief.md
 References/
+.vercel
+.env*
