@@ -30,11 +30,8 @@ export function HomeSection() {
 
       <section className="mt-6 rounded-md border border-[#2a2a2a] bg-[#171717] p-5">
         <div className="mb-5">
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#a8a8a8]">Flexible Content Area</p>
-          <h2 className="heading-serif mt-2 text-2xl font-bold text-[#e8e3da]">Personal Photos / Notes</h2>
-          <p className="mt-2 text-sm leading-6 text-[#a8a8a8]">
-            Add writing, lifestyle photos, robotics build photos, captions, or anything that helps the site feel like you.
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#a8a8a8]">Photos</p>
+          <h2 className="heading-serif mt-2 text-2xl font-bold text-[#e8e3da]">Snippets into my life</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {siteContent.personalPhotos.map((photo) => (
@@ -45,7 +42,7 @@ export function HomeSection() {
           ))}
         </div>
       </section>
-      
+
       <TechStackGrid />
     </div>
   );

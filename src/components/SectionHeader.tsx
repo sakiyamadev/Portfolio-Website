@@ -17,7 +17,7 @@ type SectionHeaderProps = {
 
 export function SectionHeader({ eyebrow, title, helper, accent = "neutral" }: SectionHeaderProps) {
   return (
-    <header className="mb-8">
+    <header className="mb-4">
       {eyebrow ? (
         <p className={`mb-2 text-xs font-semibold uppercase tracking-[0.14em] ${eyebrowClasses[accent]}`}>
           {eyebrow}

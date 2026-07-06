@@ -25,11 +25,10 @@ export function BootScreen({ onEnter }: BootScreenProps) {
         transition={{ duration: 0.65, ease: "easeOut" }}
         className="flex flex-col items-center"
       >
-        {/* Replace boot-icon-placeholder.png with your real boot/startup icon. */}
         <img
           src={siteContent.bootIcon}
-          alt="Boot icon placeholder"
-          className="h-24 w-24 rounded-2xl border border-[#3a3a3a] bg-[#161616] object-cover p-4"
+          alt="Boot icon"
+          className="h-40 w-40 rounded-2xl border border-[#3a3a3a] bg-[#161616] object-cover p-4"
         />
         <div className="mt-8 h-1.5 w-64 overflow-hidden rounded-full bg-[#262626]">
           <motion.div
@@ -39,7 +38,7 @@ export function BootScreen({ onEnter }: BootScreenProps) {
             transition={{ duration: 1.35, ease: "easeInOut" }}
           />
         </div>
-        <p className="mt-6 text-sm uppercase tracking-[0.2em] text-[#8a8a8a]">Shun Akiyama System</p>
+        <p className="mt-6 text-sm uppercase tracking-[0.2em] text-[#8a8a8a]">Welcome</p>
         <h1 className="mt-3 text-2xl font-semibold text-[#e8e3da]">Press any key to enter</h1>
         <button
           type="button"

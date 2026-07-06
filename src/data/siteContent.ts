@@ -11,20 +11,20 @@ export const siteContent = {
   technicalFocus:
     "Current focus areas: full-stack tools, embedded firmware, sensor-driven systems, robotics prototypes",
   profileImage: "/assets/profile-photo.jpeg",
-  bootIcon: "/assets/boot-icon-placeholder.png",
+  bootIcon: "/assets/boot-icon.png",
   personalPhotos: [
     {
-      src: "/assets/project-placeholder.png",
-      alt: "Personal content placeholder",
-      caption: "Replace this with a personal or lifestyle photo.",
+      src: "/assets/Fun1.JPEG",
+      alt: "FormulaE Team",
+      caption: "My FormulaE Team!",
     },
     {
-      src: "/assets/experience-placeholder.png",
-      alt: "Engineering content placeholder",
-      caption: "Add a robotics, lab, club, or project photo here.",
+      src: "/assets/Fun2.JPG",
+      alt: "Camping at Garibaldi Lake",
+      caption: "Camping at Garibaldi Lake!",
     },
   ],
-  resumePath: "/assets/resume-placeholder.pdf",
+  resumePath: "/assets/Akiyama_Shun_Resume.pdf",
   footerLines: [
     "© 2026 Shun Akiyama"
   ],

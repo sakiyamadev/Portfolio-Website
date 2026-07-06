@@ -8,7 +8,6 @@ export function ResumeSection() {
       <SectionHeader
         eyebrow="Resume"
         title="Resume"
-        helper="Preview the placeholder PDF below or download it. Replace the path in src/data/siteContent.ts when you add the final resume."
         accent="purple"
       />
       <ResumeViewer resumePath={siteContent.resumePath} />

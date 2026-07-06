@@ -29,7 +29,7 @@ export const dockLinks: DockLink[] = [
   {
     id: "resume",
     label: "Resume",
-    url: "/assets/resume-placeholder.pdf",
+    url: "/assets/Akiyama_Shun_Resume.pdf",
     external: true,
   },
 ];
