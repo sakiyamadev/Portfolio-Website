@@ -41,6 +41,7 @@ export function ProjectsSection() {
       <SectionHeader
         eyebrow="Projects"
         title="Projects"
+        helper="Here are some fun projects I've worked on"
         accent="cyan"
       />
       <div className="mb-6 flex flex-wrap items-center gap-2 rounded-md border border-[#2a2a2a] bg-[#171717] p-3">

@@ -41,7 +41,7 @@ function App() {
                 transition={{ duration: 0.24, ease: "easeOut" }}
               >
                 <ActiveSection />
-                <div className="px-8 pb-8 max-sm:px-5">
+                <div className="px-8 pb-4 max-sm:px-5">
                   <Footer />
                 </div>
               </motion.div>

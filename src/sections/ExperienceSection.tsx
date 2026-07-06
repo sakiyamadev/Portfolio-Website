@@ -23,6 +23,7 @@ export function ExperienceSection() {
       <SectionHeader
         eyebrow="Experience"
         title="Experience"
+        helper="Here are some places I've worked over the years"
         accent="green"
       />
       <div className="grid gap-5 xl:grid-cols-1">

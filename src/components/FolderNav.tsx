@@ -19,16 +19,16 @@ const navItems: {
     openIcon: "/assets/folder-home-open.png",
   },
   {
-    id: "projects",
-    label: "Projects",
-    closedIcon: "/assets/folder-projects-closed.png",
-    openIcon: "/assets/folder-projects-open.png",
-  },
-  {
     id: "experience",
     label: "Experience",
     closedIcon: "/assets/folder-experience-closed.png",
     openIcon: "/assets/folder-experience-open.png",
+  },
+  {
+    id: "projects",
+    label: "Projects",
+    closedIcon: "/assets/folder-projects-closed.png",
+    openIcon: "/assets/folder-projects-open.png",
   },
   {
     id: "resume",
