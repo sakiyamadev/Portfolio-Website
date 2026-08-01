@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "latest",
+    "@vercel/analytics": "^2.0.1",
     "lucide-react": "latest",
     "motion": "latest",
     "react": "latest",

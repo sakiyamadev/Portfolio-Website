@@ -1,5 +1,6 @@
 import { useCallback, useState, type ComponentType } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { Analytics } from "@vercel/analytics/react";
 import { BootScreen } from "./components/BootScreen";
 import { DesktopBackground } from "./components/DesktopBackground";
 import { Dock } from "./components/Dock";
@@ -51,6 +52,7 @@ function App() {
           <Dock onResumeShortcut={() => setActiveSection("resume")} />
         </div>
       </DesktopBackground>
+      <Analytics />
     </>
   );
 }
