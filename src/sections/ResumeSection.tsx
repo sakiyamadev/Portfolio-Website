@@ -7,7 +7,7 @@ export function ResumeSection() {
     <div className="p-8 max-sm:p-5">
       <SectionHeader
         eyebrow="Resume"
-        title="Resume"
+        title="Shun's Resume"
         accent="purple"
       />
       <ResumeViewer resumePath={siteContent.resumePath} />

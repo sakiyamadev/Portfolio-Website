@@ -8,10 +8,7 @@ export function ResumeViewer({ resumePath }: ResumeViewerProps) {
   return (
     <div className="rounded-md border border-[#3a3545] bg-[#1a171f] p-4">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h2 className="heading-serif text-xl font-bold text-[#e8e3da]">Resume Preview</h2>
-          <p className="mt-1 text-sm text-[#a8a8a8]">Replace the placeholder PDF in public/assets when ready.</p>
-        </div>
+        <h2 className="heading-serif text-xl font-bold text-[#e8e3da]">Resume Preview</h2>
         <a
           href={resumePath}
           download
