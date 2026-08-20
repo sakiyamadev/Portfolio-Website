@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+import type { IconType } from "react-icons";
 
 export type SectionId = "home" | "projects" | "experience" | "resume";
 
@@ -39,10 +39,17 @@ export type Experience = {
   media?: MediaItem[];
 };
 
+export type TechStackLogo = {
+  alt: string;
+  Icon?: IconType;
+  src?: string;
+  className?: string;
+};
+
 export type TechStackItem = {
   name: string;
   description: string;
-  icon: LucideIcon;
+  logos: TechStackLogo[];
 };
 
 export type TechStackGroup = {
